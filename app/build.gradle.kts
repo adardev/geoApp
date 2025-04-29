@@ -1,5 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.secrets)
+
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -31,6 +34,7 @@ android {
     }
     buildFeatures {
         buildConfig = true
+        viewBinding = true
         // ...
     }
 }
@@ -40,8 +44,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation(platform(libs.firebase.bom))
+    // TODO: Add the dependencies for Firebase products you want to use
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.database) // Para Firebase Realtime Database
 }

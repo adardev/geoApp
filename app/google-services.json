@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47551235972",
+    "project_id": "geoapp-5fcf4",
+    "storage_bucket": "geoapp-5fcf4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47551235972:android:c242f72a9afaa4ca23ffd1",
+        "android_client_info": {
+          "package_name": "com.example.geoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQaZLBqgyvWL44OqEe_k1L3j4CjCQOJt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
