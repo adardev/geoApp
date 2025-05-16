@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRoom"
+    android:orientation="vertical"
+    android:background="@color/backgroundPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundSecondary"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/userNameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/back_btn"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_margin="5dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_btn" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="50dp"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:background="@color/backgroundPrimary"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_toLeftOf="@id/boton_enviar_texto"
+            android:backgroundTint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="30dp">
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mensaje"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp">
+            </EditText>
+        </androidx.cardview.widget.CardView>
+        <ImageButton
+            android:background="@color/backgroundPrimary"
+            android:id="@+id/boton_enviar_texto"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/send"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+        </ImageButton>
+    </RelativeLayout>
+</RelativeLayout>

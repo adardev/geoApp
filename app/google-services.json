@@ -1,13 +1,33 @@
 {
   "project_info": {
-    "project_number": "47551235972",
-    "project_id": "geoapp-5fcf4",
-    "storage_bucket": "geoapp-5fcf4.firebasestorage.app"
+    "project_number": "792740544553",
+    "firebase_url": "https://chat-2bd24-default-rtdb.firebaseio.com",
+    "project_id": "chat-2bd24",
+    "storage_bucket": "chat-2bd24.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:47551235972:android:c242f72a9afaa4ca23ffd1",
+        "mobilesdk_app_id": "1:792740544553:android:8b03dc28ae2a0c3b3a5c38",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPPIGECjz8M9WzS5qGPlX_BJ4wVjrcMxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792740544553:android:b3c510b670d05d083a5c38",
         "android_client_info": {
           "package_name": "com.example.geoapp"
         }
@@ -15,7 +35,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBQaZLBqgyvWL44OqEe_k1L3j4CjCQOJt8"
+          "current_key": "AIzaSyAPPIGECjz8M9WzS5qGPlX_BJ4wVjrcMxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792740544553:android:4d6a85e61780738e3a5c38",
+        "android_client_info": {
+          "package_name": "com.example.localizacion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPPIGECjz8M9WzS5qGPlX_BJ4wVjrcMxc"
         }
       ],
       "services": {

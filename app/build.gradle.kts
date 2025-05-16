@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.secrets)
-
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin") version "2.0.1"
     id("com.google.gms.google-services")
 }
 
@@ -35,22 +34,28 @@ android {
     buildFeatures {
         buildConfig = true
         viewBinding = true
-        // ...
     }
 }
 
 dependencies {
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
+    implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.play.services.maps)
-    implementation(libs.play.services.location)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(platform(libs.firebase.bom))
-    // TODO: Add the dependencies for Firebase products you want to use
-    implementation(libs.firebase.analytics)
-    implementation(libs.firebase.database) // Para Firebase Realtime Database
+    implementation (libs.firebase.auth)
+    implementation (libs.firebase.firestore.v24100)
+    implementation (libs.firebase.ui.auth)
+    implementation (libs.firebase.ui.database)
+    implementation (libs.firebase.ui.firestore)
+    implementation (libs.ccp)
 }
