@@ -29,7 +29,6 @@ public class ChatRoomAdapterFirestore extends FirestoreRecyclerAdapter<ChatRoomM
         String currentUid = global.getInstance ().getUid ();
         String otherUserUid = null;
         String documentId = getSnapshots ().getSnapshot (position).getId ();
-        holder.id.setText ("ID: " + documentId);
         for (String uid : model.getUsuarios ()) {
             if (!uid.equals (currentUid)) {
                 otherUserUid = uid;
@@ -53,7 +52,6 @@ public class ChatRoomAdapterFirestore extends FirestoreRecyclerAdapter<ChatRoomM
         } else {
             holder.username.setText ("Sin usuarios");
         }
-        holder.fecha.setText (model.getUltimoMensaje ());
         holder.itemView.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
