@@ -38,6 +38,6 @@
             android:exported="false" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAoYIlrfSriqVxqq2Oj_M3gfSP4VeGOBSU" />
+            android:value="YOUR_API_KEY" />
     </application>
 </manifest>
